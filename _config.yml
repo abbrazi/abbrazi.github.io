@@ -1,0 +1,39 @@
+title: abbrazi
+description: About, writing, code, and papers.
+url: "https://abbrazi.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+timezone: Europe/London
+
+navigation:
+  - title: about
+    url: /
+    section: about
+  - title: blog
+    url: /blog/
+    section: blog
+  - title: code
+    url: /code/
+    section: code
+  - title: papers
+    url: /papers/
+    section: papers
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      section: blog
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
